@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- =====================================================
+         NAVBAR SECTION
+         ===================================================== -->
+    <header class="fixed-top py-4">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <!-- Logo -->
+          <a
+            href="#home"
+            class="logo text-decoration-none d-flex align-items-center gap-2"
+          >
+            <i class="fa-solid fa-film"></i> Movies
+          </a>
+
+          <!-- Navigation Links (Centered on Desktop) -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-lg-5 mb-0">
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none fw-500 home-active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none fw-500" href="#movies">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none fw-500" href="#coming-soon">Coming Soon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none fw-500" href="#newsletter">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Navigation Controls: Hamburger & Sign In -->
+          <div class="d-flex align-items-center gap-4 ms-auto">
+            <!-- Hamburger Menu (visible on mobile) -->
+            <button
+              class="navbar-toggler d-lg-none order-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Sign In Button -->
+            <a href="#" class="btn py-2 px-4 order-2">Sign In</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- =====================================================
+         HOME SECTION
+         ===================================================== -->
+    <section id="home" class="home py-5">
+      <div class="container">
+        <div class="home-text ps-md-5 ps-3">
+          <!-- Subheading -->
+          <span class="text-dark">Marvel Universe</span>
+          <!-- Main Headline -->
+          <h2 class="text-white movie-title">
+            Spider-Man<br />
+            Far From Home
+          </h2>
+          <!-- Call-to-Action Button -->
+          <a href="#" class="btn mt-3 py-2 px-4">Book Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- =====================================================
+         MOVIES SECTION
+         ===================================================== -->
+    <section id="movies" class="movies py-5">
+      <div class="container">
+        <!-- Section Heading -->
+        <h2 class="heading text-left mb-4 mx-auto">Opening this Week</h2>
+        <!-- Restricted-width container for movie boxes -->
+        <div class="w-75 mx-auto">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Movie Box 1 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m1.jpg" alt="Venom" class="img-fluid" />
+                </div>
+                <h3>Venom</h3>
+                <span>120min | Action</span>
+              </div>
+            </div>
+            <!-- Movie Box 2 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m2.jpg" alt="Dunkerk" class="img-fluid" />
+                </div>
+                <h3>Dunkerk</h3>
+                <span>105min | Adventure</span>
+              </div>
+            </div>
+            <!-- Movie Box 3 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m3.jpg" alt="Batman &amp; Superman" class="img-fluid" />
+                </div>
+                <h3>Batman &amp; Superman</h3>
+                <span>100min | Thriller</span>
+              </div>
+            </div>
+            <!-- Movie Box 4 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m4.jpg" alt="John Wick" class="img-fluid" />
+                </div>
+                <h3>John Wick</h3>
+                <span>120min | Adventure</span>
+              </div>
+            </div>
+            <!-- Movie Box 5 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m5.jpg" alt="Aquaman" class="img-fluid" />
+                </div>
+                <h3>Aquaman</h3>
+                <span>130min | Action</span>
+              </div>
+            </div>
+            <!-- Movie Box 6 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m6.jpg" alt="Black Panther" class="img-fluid" />
+                </div>
+                <h3>Black Panther</h3>
+                <span>90min | Thriller</span>
+              </div>
+            </div>
+            <!-- Movie Box 7 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m7.jpg" alt="Thor" class="img-fluid" />
+                </div>
+                <h3>Thor</h3>
+                <span>130min | Action</span>
+              </div>
+            </div>
+            <!-- Movie Box 8 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m8.png" alt="Bumblebee" class="img-fluid" />
+                </div>
+                <h3>Bumblebee</h3>
+                <span>100min | Thriller</span>
+              </div>
+            </div>
+            <!-- Movie Box 9 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m9.jpg" alt="Mortal Engines" class="img-fluid" />
+                </div>
+                <h3>Mortal Engines</h3>
+                <span>100min | Action</span>
+              </div>
+            </div>
+            <!-- Movie Box 10 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/m10.jpg" alt="UnderWorld Blood Wars" class="img-fluid" />
+                </div>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>100min | Action</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Movies Section -->
+
+    <!-- =====================================================
+         COMING SOON SECTION
+         ===================================================== -->
+    <section id="coming-soon" class="coming py-5">
+      <div class="container">
+        <!-- Section Heading -->
+        <h2 class="heading text-left mb-4 mx-auto">Coming Soon</h2>
+        <div class="w-75 mx-auto">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Coming Soon Movie Box 1 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming1.jpg" alt="Joney English" class="img-fluid w-100" />
+                </div>
+                <h3>Joney English</h3>
+                <span>80min | Comedy</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 2 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming2.jpg" alt="WarCrafet" class="img-fluid w-100" />
+                </div>
+                <h3>WarCrafet</h3>
+                <span>120min | Action</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 3 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming3.jpg" alt="Rampage" class="img-fluid w-100" />
+                </div>
+                <h3>Rampage</h3>
+                <span>108min | Adventure</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 4 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming4.jpg" alt="Airon Lady" class="img-fluid w-100" />
+                </div>
+                <h3>Airon Lady</h3>
+                <span>120min | Comedy</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 5 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming5.jpg" alt="Justice League" class="img-fluid w-100" />
+                </div>
+                <h3>Justice League</h3>
+                <span>120min | Adventure</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 6 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming6.jpeg" alt="Doctor Strange" class="img-fluid w-100" />
+                </div>
+                <h3>Doctor Strange</h3>
+                <span>120min | Adventure</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 7 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming7.jpg" alt="Captain Marvel" class="img-fluid w-100" />
+                </div>
+                <h3>Captain Marvel</h3>
+                <span>120min | Adventure</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 8 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming8.jpg" alt="Black Widow" class="img-fluid w-100" />
+                </div>
+                <h3>Black Widow</h3>
+                <span>90min | Action</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 9 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming9.jpg" alt="Ant Man" class="img-fluid w-100" />
+                </div>
+                <h3>Ant Man</h3>
+                <span>110min | Adventure</span>
+              </div>
+            </div>
+            <!-- Coming Soon Movie Box 10 -->
+            <div class="col">
+              <div class="box text-left">
+                <div class="box-img">
+                  <img src="img/coming10.jpg" alt="Guardians Of The Galaxy" class="img-fluid w-100" />
+                </div>
+                <h3>Guardians Of The Galaxy</h3>
+                <span>120min | Adventure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Coming Soon Section -->
+
+    <!-- =====================================================
+         NEWSLETTER SECTION
+         ===================================================== -->
+    <section id="newsletter" class="news py-5 mb-4">
+      <div class="container">
+        <!-- Center content with fixed max-width -->
+        <div class="mx-auto" style="max-width: 500px;">
+          <h2 class="text-center">
+            Subscribe To Get <br />Newsletter
+          </h2>
+          <form class="d-flex flex-wrap justify-content-center align-items-center mt-4">
+            <!-- Email Input Field -->
+            <input
+              class="form-control mb-2 mb-md-0"
+              type="email"
+              placeholder="Enter Email..."
+              style="max-width: 300px;"
+            />
+            <!-- Subscribe Button -->
+            <input type="submit" value="Subscribe" class="btn m-2 py-2 px-4" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Newsletter Section -->
+
+    <!-- =====================================================
+         FOOTER SECTION
+         ===================================================== -->
+    <footer class="footer py-3 py-md-4 text-white">
+      <div class="container">
+        <!-- Footer content with responsive layout -->
+        <div class="row justify-content-center mx-auto" style="max-width: 90%;">
+          <div class="col-12">
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center gap-4 gap-md-0">
+              <!-- Footer Logo -->
+              <a
+                href="index.html"
+                class="logo d-flex align-items-center gap-2 text-white text-decoration-none"
+              >
+                <i class="fa-solid fa-film fs-4 fs-md-3"></i>
+                <span class="fs-5 fs-md-4">Movies</span>
+              </a>
+              <!-- Social Media Icons -->
+              <div class="social-icons d-flex gap-2 gap-md-2">
+                <a href="#"><i class="fa-brands fa-facebook fs-2 fs-md-3"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fs-2 fs-md-3"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fs-2 fs-md-3"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok fs-2 fs-md-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- =====================================================
+         COPYRIGHT SECTION
+         ===================================================== -->
+    <div class="copy text-center py-3 text-white">
+      <p>&#169; <span>Web Masters</span> All Right Reserved.</p>
+    </div>
+
+    <!-- =====================================================
+         SCRIPT INCLUSIONS
+         ===================================================== -->
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
