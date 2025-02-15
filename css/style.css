@@ -1,0 +1,320 @@
+/* ==========================================================================
+   GLOBAL SETTINGS & SCROLL BEHAVIOR
+   ========================================================================== */
+
+* {
+  scroll-padding-top: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   CUSTOM SCROLLBAR STYLES
+   ========================================================================== */
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5rem;
+}
+
+/* ==========================================================================
+   CSS VARIABLES
+   ========================================================================== */
+
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+
+header {
+  transition: 0.5s;
+}
+
+header.shadow {
+  background-color: var(--bg-color);
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+header.shadow .navbar a,
+header.shadow .logo {
+  color: var(--text-color);
+}
+
+header div nav .logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bg-color);
+}
+
+header .logo i {
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+/* ==========================================================================
+   NAVIGATION LINKS & UNDERLINE EFFECT
+   ========================================================================== */
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  color: var(--main-color);
+}
+
+.navbar-nav .nav-item a {
+  color: var(--main-color);
+  position: relative;
+}
+
+.navbar-nav .nav-item a::after {
+  content: '';
+  position: absolute;
+  background-color: var(--main-color);
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s all linear;
+}
+
+.navbar-nav .nav-item a:hover::after,
+.navbar-nav .nav-item a.home-active::after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   BUTTON STYLES
+   ========================================================================== */
+
+header .btn,
+.home-text .btn,
+.news .btn {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 0.5rem;
+}
+
+header .btn,
+.home-text .btn {
+  font-weight: 400;
+}
+
+.news .btn {
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fa1216;
+}
+
+.btn::after,
+.logo::after {
+  display: none;
+}
+
+/* ==========================================================================
+   HOME SECTION
+   ========================================================================== */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/home3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.home .home-text {
+  position: absolute;
+  top: 40%;
+}
+
+.home-text span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home-text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   MOVIES SECTION
+   ========================================================================== */
+
+.heading {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--main-color);
+  max-width: 1000px;
+}
+
+.box-img img:hover {
+  transform: translateY(-10px);
+}
+
+.box h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.box span {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   NEWSLETTER SECTION
+   ========================================================================== */
+
+.news h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.news form {
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+}
+
+.news form input[type="email"] {
+  border: 0;
+  outline: 0;
+}
+
+.news input::placeholder {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer .logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bg-color);
+}
+
+.footer .logo i {
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.social-icons a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 55px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 4px solid rgba(2, 3, 7, 0.4);
+  transition: 0.2s all linear;
+}
+
+.social-icons a:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+/* ==========================================================================
+   COPYRIGHT
+   ========================================================================== */
+
+.copy {
+  font-size: 1.1rem;
+}
+
+.copy span {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    color: var(--text-color);
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    flex-grow: 0;
+    flex-basis: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
